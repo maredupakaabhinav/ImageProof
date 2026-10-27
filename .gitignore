@@ -16,7 +16,9 @@ venv/
 .env
 
 # Local database & transient forensics files
+*.db
 backend/imageproof.db
+api/imageproof.db
 backend/uploads/*
 !backend/uploads/.gitkeep
 backend/reports/*
