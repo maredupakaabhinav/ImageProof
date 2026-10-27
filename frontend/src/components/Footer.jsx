@@ -29,11 +29,11 @@ export default function Footer({ onDataReset }) {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '0.25rem' }}>
             <ShieldCheck size={16} color="var(--accent-blue)" />
-            <span>ImageProof Digital Evidence Forensics Lab</span>
+            <span>ImageProof Forensics & Incident Response Platform</span>
           </div>
-          <div>B.Tech Cyber Security (2nd Year) Capstone Project</div>
+          <div>Digital Evidence Authenticity & Cryptographic Verification Suite</div>
           <div style={{ fontSize: '0.75rem', color: 'var(--text-subtle)', marginTop: '0.2rem' }}>
-            Complies with ISO/IEC 27037 (Digital Evidence Handling) & NIST SP 800-86 principles.
+            Complies with ISO/IEC 27037 (Digital Evidence Handling) & NIST SP 800-86 standards.
           </div>
         </div>
 
@@ -43,10 +43,10 @@ export default function Footer({ onDataReset }) {
             className="btn btn-outline"
             style={{ fontSize: '0.75rem', padding: '0.35rem 0.75rem' }}
             disabled={resetting}
-            title="Reset SQLite database and sample files for fresh demonstration"
+            title="Purge analysis records and clear temporary investigation files"
           >
             <RotateCcw size={12} className={resetting ? 'spin' : ''} />
-            <span>{resetting ? 'Resetting...' : 'Reset Demo Data'}</span>
+            <span>{resetting ? 'Purging...' : 'Purge Evidence Cache'}</span>
           </button>
         </div>
       </div>

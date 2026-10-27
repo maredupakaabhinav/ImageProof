@@ -115,7 +115,7 @@ def generate_pdf_report(analysis_record: dict, output_dir: str) -> str:
     # 1. Header Banner
     story.append(Paragraph("IMAGEPROOF: DIGITAL FORENSIC EVIDENCE REPORT", title_style))
     story.append(Paragraph(
-        "Cryptographic Integrity & Metadata Authenticity Analysis | College Forensics Lab Edition",
+        "Cryptographic Integrity & Metadata Authenticity Analysis | Enterprise Forensics Edition",
         subtitle_style
     ))
     story.append(HRFlowable(width="100%", thickness=2, color=c_accent, spaceBefore=0, spaceAfter=12))
@@ -145,7 +145,7 @@ def generate_pdf_report(analysis_record: dict, output_dir: str) -> str:
             Paragraph("<b>Dimensions:</b>", body_style),
             Paragraph(f"{file_info.get('width', 'N/A')} x {file_info.get('height', 'N/A')} ({file_info.get('megapixels', 'N/A')})", body_style),
             Paragraph("<b>Forensic Examiner:</b>", body_style),
-            Paragraph("Student Investigator / ImageProof Engine", body_style),
+            Paragraph("Certified Forensic Examiner / Automated Ingest Engine", body_style),
         ]
     ]
     

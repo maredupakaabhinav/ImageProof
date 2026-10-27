@@ -8,7 +8,7 @@ export default function Home({ setActivePage }) {
       <section className="hero">
         <div className="hero-pill">
           <Shield size={14} />
-          <span>B.Tech Cyber Security Project • Digital Forensics Lab</span>
+          <span>Digital Forensics & Incident Response (DFIR) Platform</span>
         </div>
 
         <h1 className="hero-title">

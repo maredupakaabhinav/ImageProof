@@ -249,17 +249,16 @@ export default function Upload({ setActivePage, setSelectedAnalysisId }) {
         </div>
       </form>
 
-      {/* Forensic Student Tips Box */}
-      <div className="card" style={{ marginTop: '1.5rem', background: 'var(--bg-secondary)', border: '1px dashed var(--border-light)' }}>
-        <h4 style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+      {/* Forensic Ingestion Standards */}
+      <div className="card" style={{ marginTop: '1.5rem', background: 'var(--bg-secondary)', border: '1px solid var(--border-dim)' }}>
+        <h4 style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <CheckCircle2 size={16} color="var(--accent-blue)" />
-          Demonstration Tips for Project Viva:
+          Forensic Acquisition Standards (ISO/IEC 27037)
         </h4>
-        <ul style={{ fontSize: '0.8rem', color: 'var(--text-muted)', paddingLeft: '1.25rem', lineHeight: '1.6' }}>
-          <li><strong>Direct Camera Photo:</strong> Shows camera Make/Model, shutter speed, ISO, and original timestamp.</li>
-          <li><strong>WhatsApp / Social Media Photo:</strong> EXIF metadata will be reported as stripped (common due to compression).</li>
-          <li><strong>Photoshop / GIMP Export:</strong> The anomaly detector will identify the software signature and flag it with a warning.</li>
-          <li><strong>Invalid Extension (.txt or .exe):</strong> Demonstrates server-side file rejection and format header validation.</li>
+        <ul style={{ fontSize: '0.8rem', color: 'var(--text-muted)', paddingLeft: '1.25rem', lineHeight: '1.7' }}>
+          <li><strong>Cryptographic Chain of Custody:</strong> Bitwise SHA-256 hash is computed immediately upon ingestion.</li>
+          <li><strong>Non-Destructive Extraction:</strong> Image metadata, EXIF tags, and GPS coordinates are analyzed in read-only memory.</li>
+          <li><strong>Tampering Heuristics:</strong> Discrepancies between capture timestamps and modification signatures are automatically evaluated.</li>
         </ul>
       </div>
     </div>
