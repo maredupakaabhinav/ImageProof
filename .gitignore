@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+frontend/dist/
+.vercel/
+
+# Python cache & environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Local database & transient forensics files
+backend/imageproof.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/reports/*
+!backend/reports/.gitkeep
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE config
+.idea/
+.vscode/
+*.swp
+*.swo
